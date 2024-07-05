@@ -110,7 +110,8 @@ body{
 }
 
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active
+{
     color: #2D99AE;
 }
 

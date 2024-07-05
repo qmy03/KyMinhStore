@@ -1,0 +1,83 @@
+#page-header{
+    background-image: url(http://localhost:3000/image/banner/banner7.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    color: #FFF;
+}
+
+#shop{
+    width: 100%;
+}
+
+#shop .container{
+    max-width: 100%;
+    display: flex;
+}
+
+#shop .container .left_box{
+    width: 25%;
+}
+
+#shop .container .left_box .category{
+    border: 3px solid #E3E6F3;
+    width: 200px;
+}
+
+#shop .container .left_box .category .header{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #E3E6F3;
+    text-transform: uppercase;
+}
+
+#shop .container .left_box .category .header h4{
+    font-size: 15px;
+}
+
+#shop .container .left_box .category .box{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#shop .container .left_box .category .box ul{
+    max-width: 100%;
+}
+
+#shop .container .left_box .category .box ul li{
+    list-style: none;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #345E7D;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#shop .container .left_box .category .box ul li:hover{
+    color: #001C44;
+}
+#shop .container .left_box .banner{
+    margin-top: 20px;
+    width: 200px;
+}
+
+#shop .container .left_box .banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#shop .container .right_box{
+    width: 100%;
+}
