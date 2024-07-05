@@ -3,6 +3,7 @@ import './shop.css';
 
 import { FaStar } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Shop = ({shop}) => {
     return (
@@ -68,6 +69,12 @@ const Shop = ({shop}) => {
                 </div>
                 </div>
             </div>
+        </section>
+        <section id="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i><FaLongArrowAltRight /></i></a>
         </section>
         </>
     )

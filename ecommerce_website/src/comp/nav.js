@@ -34,7 +34,7 @@ const Nav = () => {
                         </ul>
                     </div>
                     <div className='logo'>
-                        <img src='image/Logo_Brand.png' alt='logo'></img>
+                        <Link to="/"><img src='image/Logo_Brand.png' alt='logo' /></Link>
                     </div>
                     <div className='nav2'>
                         <div className='search_box'>
