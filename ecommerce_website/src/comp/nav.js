@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import { IoClose } from "react-icons/io5";
 import './nav.css';
 
-const Nav = () => {
+const Nav = ({search, setSearch, searchProduct}) => {
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
     const [showNav, setShowNav] = useState(false);
 
@@ -38,8 +38,8 @@ const Nav = () => {
                     </div>
                     <div className='nav2'>
                         <div className='search_box'>
-                            <input type='text' value='' placeholder='search'></input>
-                            <button><AiOutlineSearch /></button>
+                            <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)}></input>
+                            <button onClick={searchProduct}><AiOutlineSearch /></button>
                         </div>
                         <ul>
                             <li><Link to='/cart' className='link'><FaCartPlus /></Link></li>

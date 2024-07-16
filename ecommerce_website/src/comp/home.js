@@ -6,7 +6,7 @@ import { AiFillEye, AiFillHeart } from "react-icons/ai";
 import { IoCartOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 
-const Home = () => {
+const Home = ({addtocart}) => {
     const [newProduct, setNewProduct] = useState([]);
     const [featureProduct, setFeatureProduct] = useState([]);
 
@@ -30,6 +30,7 @@ const Home = () => {
     };
 
     return (
+        <>
         <div id="home">
             <div className="top_banner">
                 <div id="hero">
@@ -78,7 +79,7 @@ const Home = () => {
                                         </div>
                                         <h4>{curElm.price}</h4>
                                         <div className="cart-container">
-                                            <button className="cart"><IoCartOutline /></button>
+                                            <button className="cart" onClick={() => addtocart(curElm)}><IoCartOutline /></button>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +117,7 @@ const Home = () => {
                                         </div>
                                         <h4>{curElm.price}</h4>
                                         <div className="cart-container">
-                                            <button className="cart"><IoCartOutline /></button>
+                                            <button className="cart" onClick={() => addtocart(curElm)}><IoCartOutline /></button>
                                         </div>
                                     </div>
                                 </div>
@@ -151,6 +152,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
