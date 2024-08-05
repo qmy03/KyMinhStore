@@ -65,7 +65,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                                         <FaUserAlt />
                                     </div>
                                     <div className='info'>
-                                        <h2>{user.name}</h2>
+                                        <h4>{user.name}</h4>
                                         <p>{user.email}</p>
                                     </div>
                                 </>

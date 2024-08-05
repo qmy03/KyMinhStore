@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KyMinh</title>
-    <link rel="shortcut icon" type="image/png" href="/image/KM.png"/>
+    <link rel="shortcut icon" type="image/png" href="/image/icon_brand.png"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,9 +20,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li id="lg-bag"><a href="cart.html" class="active"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -32,47 +32,77 @@
         </div>
     </section>
 
-    <section id="page-header" class="about-header">
-        <h2>#KnowUs</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur</p>
+    <section id="page-header" class="cart-header">
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 70%!</p>
     </section>
 
-    <section id="about-head" class="section-p1">
-        <img src="image/about/about2.png" alt="">
-        <div>
-            <h2>Who We Are?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <abbr title="">Create stunning images with as much or as little
-                control as you like thanks to a choice of Basic and Creative modes.
-            </abbr>
-            <br><br>
-            <marquee bgcolor="#CCC" loop="-1" scrollamount="5" width="100%">Create stunning images with as much or as little
-                control as you like thanks to a choice of Basic and Creative modes.</marquee>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/PM_00_White.avif" alt=""></td>
+                    <td>UT POP MART T-Shirt <br><br>Color: 00 White</td>
+                    <td>290.000 VND</td>
+                    <td><input type="number" value="1"></td>
+                    <td>290.000 VND</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/PN_69_Navy.avif" alt=""></td>
+                    <td>UT PEANUTS T-Shirt <br><br>Color: 69 Navy</td>
+                    <td>290.000 VND</td>
+                    <td><input type="number" value="1"></td>
+                    <td>290.000 VND</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="image/products/PN_47_Yellow.avif" alt=""></td>
+                    <td>UT PEANUTS T-Shirt <br><br>Color: 47 Yellow</td>
+                    <td>290.000 VND</td>
+                    <td><input type="number" value="1"></td>
+                    <td>290.000 VND</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="about-app" class="section-p1">
-        <h1>Download Our <a href="#">App</a></h1>
-        <div class="video">
-            <video autoplay muted loop src="image/about/about3.mp4"></video>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
         </div>
-    </section>
-
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="image/feature/free-shipping.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="image/feature/oder-online.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="image/feature/support.png" alt="">
-            <h6>F24/7 Support</h6>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>870.000 VND</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>870.000 VND</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
 
